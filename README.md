@@ -77,7 +77,7 @@ $('form').on('submit', function(e) {
 
 ```javascript
 beforeSerialize: function($form, options) {
-    // return false to cancel submit
+    // 返回false取消提交
 }
 ```
 
@@ -86,9 +86,9 @@ beforeSerialize: function($form, options) {
 
 ```javascript
 beforeSubmit: function(arr, $form, options) {
-    // form data array is an array of objects with name and value properties
+    // 表单数据数组是由`name`值和`value`值组成的对象数组
     // [ { name: 'username', value: 'jresig' }, { name: 'password', value: 'secret' } ]
-    // return false to cancel submit
+    // 返回false取消提交
 }
 ```
 
